@@ -16,4 +16,4 @@ This is a fully responsive website for a local coffee shop.
 ### Links
 
 - Solution URL: [Code on Github](https://github.com/ikennaezef/coffee-shop)
-- Live Site URL: (https://ikennaezef.github.io/coffee-shop/)
+- Live Site URL: (https://omoinjm.github.io/local-coffee-shop/)
