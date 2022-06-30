@@ -16,4 +16,4 @@ This is a fully responsive website for a local coffee shop.
 ### Links
 
 - Solution URL: [Code on Github](https://github.com/omoinjm/local-coffee-shop)
-- Live Site URL: [Live Site](https://omoinjm.github.io/local-coffee-shop/)
+- Live Site URL: [Live Site](https://loffecoffee.vercel.app/)
