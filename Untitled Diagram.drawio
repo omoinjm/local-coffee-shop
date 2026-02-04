@@ -1,14 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.7">
   <diagram id="oHom3rT3FHq7D4rP58rH" name="Page-3">
-    <mxGraphModel dx="319417" dy="196866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="334717" dy="203466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="JuORC0RYNLJaelu5o0hM-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#FF9900;startSize=40;fontStyle=1;fontSize=16;" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Users / Clients&lt;/span&gt;&#xa;&#xa;" vertex="1">
           <mxGeometry height="970" width="920" x="50" y="60" as="geometry" />
         </mxCell>
+        <mxCell id="qfkJ88Gh1XFUROKGxnIy-43" edge="1" parent="JuORC0RYNLJaelu5o0hM-1" source="JuORC0RYNLJaelu5o0hM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JuORC0RYNLJaelu5o0hM-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="JuORC0RYNLJaelu5o0hM-2" parent="JuORC0RYNLJaelu5o0hM-1" style="sketch=0;outlineConnect=0;shape=mxgraph.aws4.user;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="Users / Clients" vertex="1">
-          <mxGeometry height="60" width="60" x="40" y="60" as="geometry" />
+          <mxGeometry height="60" width="60" x="120" y="60" as="geometry" />
         </mxCell>
         <mxCell id="JuORC0RYNLJaelu5o0hM-3" parent="JuORC0RYNLJaelu5o0hM-1" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D11313;dashed=1;" value="Security Services" vertex="1">
           <mxGeometry height="260" width="200" x="600" y="60" as="geometry" />
@@ -150,6 +153,12 @@
         </mxCell>
         <mxCell id="qfkJ88Gh1XFUROKGxnIy-38" edge="1" parent="JuORC0RYNLJaelu5o0hM-1" source="JuORC0RYNLJaelu5o0hM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JuORC0RYNLJaelu5o0hM-8">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qfkJ88Gh1XFUROKGxnIy-44" edge="1" parent="JuORC0RYNLJaelu5o0hM-1" source="qfkJ88Gh1XFUROKGxnIy-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="JuORC0RYNLJaelu5o0hM-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qfkJ88Gh1XFUROKGxnIy-42" parent="JuORC0RYNLJaelu5o0hM-1" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.user;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="120" y="60" as="geometry" />
         </mxCell>
         <mxCell id="JuORC0RYNLJaelu5o0hM-17" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;startSize=40;fontStyle=1;" value="On-Premises Environment" vertex="1">
           <mxGeometry height="240" width="320" x="1040" y="40" as="geometry" />
