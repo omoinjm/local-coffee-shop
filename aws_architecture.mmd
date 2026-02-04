@@ -1,0 +1,58 @@
+graph TD
+    subgraph On-Premises Environment
+        OP_APP[On-Premises Applications]
+        OP_DB[On-Premises Databases]
+        OP_VM[On-Premises VMs]
+    end
+
+    subgraph Migration Services
+        DMS[AWS DMS<br/>(Database Migration)]
+        SMS[AWS SMS<br/>(Server Migration)]
+    end
+
+    subgraph AWS Cloud Infrastructure
+        direction LR
+
+        subgraph Compute Services
+            EC2[Amazon EC2<br/>(Applications, Web Servers, Databases)]
+            LAMBDA[AWS Lambda<br/>(Serverless Functions)]
+        end
+
+        subgraph Storage Services
+            S3[Amazon S3<br/>(Static Website & Content)]
+            EBS[Amazon EBS<br/>(Block Storage)]
+        end
+
+        subgraph Database Services
+            RDS[Amazon RDS<br/>(Relational DBs)]
+            DYNAMODB[Amazon DynamoDB<br/>(NoSQL DB)]
+        end
+
+        subgraph Security Services
+            IAM[AWS IAM<br/>(Access Control)]
+            COGNITO[Amazon Cognito<br/>(User Authentication)]
+        end
+
+        Client[Users/Clients]
+
+        %% Data Flow for Website/Applications
+        Client -- Access Static Website --> S3
+        Client -- Authenticates --> COGNITO
+        COGNITO -- Provides Auth --> IAM
+        IAM -- Controls Access to --> EC2
+        IAM -- Controls Access to --> LAMBDA
+        S3 -- Triggers Events --> LAMBDA
+        API_GW[API Gateway] -- Triggers Events --> LAMBDA
+        EC2 -- Hosts Applications & Web Servers --> S3
+        EC2 -- Utilizes Persistent Storage --> EBS
+        EC2 -- Accesses Relational Data --> RDS
+        LAMBDA -- Accesses NoSQL Data --> DYNAMODB
+        LAMBDA -- Stores/Retrieves Content --> S3
+
+        %% Migration Flows
+        OP_DB -- Replicate Data --> DMS
+        DMS -- Migrates Data To --> RDS
+        DMS -- Migrates Data To --> DYNAMODB
+        OP_VM -- Migrate VMs --> SMS
+        SMS -- Migrates To --> EC2
+    end
