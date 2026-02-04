@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.7">
+  <diagram name="AWS Architecture" id="aRX4Ozgf8y2TgJDIFToM">
+    <mxGraphModel dx="1418" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;" value="On-Premises Environment" vertex="1">
+          <mxGeometry height="320" width="260" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-2" parent="AlqLQUujTNSEI3ZBpyWY-1" style="rounded=1;whiteSpace=wrap;" value="On-Prem Applications" vertex="1">
+          <mxGeometry height="50" width="200" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-3" parent="AlqLQUujTNSEI3ZBpyWY-1" style="rounded=1;whiteSpace=wrap;" value="On-Prem Databases" vertex="1">
+          <mxGeometry height="50" width="200" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-4" parent="AlqLQUujTNSEI3ZBpyWY-1" style="rounded=1;whiteSpace=wrap;" value="On-Prem VMs" vertex="1">
+          <mxGeometry height="50" width="200" x="30" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e3f2fd;" value="AWS Database Migration Service" vertex="1">
+          <mxGeometry height="50" width="220" x="320" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-6" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e3f2fd;" value="AWS Server Migration Service" vertex="1">
+          <mxGeometry height="50" width="220" x="320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-7" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#232f3e;" value="AWS Cloud&#xa;Region: af-south-1 (Cape Town)" vertex="1">
+          <mxGeometry height="780" width="960" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-8" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;" value="Users" vertex="1">
+          <mxGeometry height="50" width="120" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-9" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;" value="Amazon Route 53" vertex="1">
+          <mxGeometry height="50" width="160" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-10" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;" value="Amazon CloudFront" vertex="1">
+          <mxGeometry height="50" width="180" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-11" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;" value="Amazon Cognito" vertex="1">
+          <mxGeometry height="50" width="180" x="200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-12" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;" value="Amazon API Gateway" vertex="1">
+          <mxGeometry height="50" width="200" x="420" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-13" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;fillColor=#fff8e1;" value="Amazon EC2 (App / Web Tier)" vertex="1">
+          <mxGeometry height="60" width="260" x="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-14" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;fillColor=#fff8e1;" value="AWS Lambda" vertex="1">
+          <mxGeometry height="60" width="200" x="500" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-15" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e9;" value="Amazon S3 (Static Content)" vertex="1">
+          <mxGeometry height="60" width="240" x="200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-16" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e9;" value="Amazon RDS" vertex="1">
+          <mxGeometry height="60" width="200" x="200" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-17" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e9;" value="Amazon DynamoDB" vertex="1">
+          <mxGeometry height="60" width="240" x="500" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="AlqLQUujTNSEI3ZBpyWY-18" parent="AlqLQUujTNSEI3ZBpyWY-7" style="rounded=1;whiteSpace=wrap;fillColor=#ede7f6;" value="Amazon CloudWatch" vertex="1">
+          <mxGeometry height="60" width="240" x="700" y="540" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
