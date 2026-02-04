@@ -6,37 +6,37 @@ graph TD
     end
 
     subgraph Migration Services
-        DMS[AWS DMS<br/>(Database Migration)]
-        SMS[AWS SMS<br/>(Server Migration)]
+        DMS[AWS DMS\n(Database Migration)]
+        SMS[AWS SMS\n(Server Migration)]
     end
 
     subgraph AWS Cloud Infrastructure
         direction LR
 
         subgraph Compute Services
-            EC2[Amazon EC2<br/>(Applications, Web Servers, Databases)]
-            LAMBDA[AWS Lambda<br/>(Serverless Functions)]
+            EC2[Amazon EC2\n(Applications, Web Servers, Databases)]
+            LAMBDA[AWS Lambda\n(Serverless Functions)]
         end
 
         subgraph Storage Services
-            S3[Amazon S3<br/>(Static Website & Content)]
-            EBS[Amazon EBS<br/>(Block Storage)]
+            S3[Amazon S3\n(Static Website & Content)]
+            EBS[Amazon EBS\n(Block Storage)]
         end
 
         subgraph Database Services
-            RDS[Amazon RDS<br/>(Relational DBs)]
-            DYNAMODB[Amazon DynamoDB<br/>(NoSQL DB)]
+            RDS[Amazon RDS\n(Relational DBs)]
+            DYNAMODB[Amazon DynamoDB\n(NoSQL DB)]
         end
 
         subgraph Security Services
-            IAM[AWS IAM<br/>(Access Control)]
-            COGNITO[Amazon Cognito<br/>(User Authentication)]
+            IAM[AWS IAM\n(Access Control)]
+            COGNITO[Amazon Cognito\n(User Authentication)]
         end
 
         subgraph Networking & Monitoring
-            CF[Amazon CloudFront<br/>(CDN)]
-            R53[Amazon Route 53<br/>(Domain Service)]
-            CW[Amazon CloudWatch<br/>(Monitoring)]
+            CF[Amazon CloudFront\n(CDN)]
+            R53[Amazon Route 53\n(Domain Service)]
+            CW[Amazon CloudWatch\n(Monitoring)]
         end
 
         Client[Users/Clients]
