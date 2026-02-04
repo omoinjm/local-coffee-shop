@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.7">
   <diagram id="oHom3rT3FHq7D4rP58rH" name="Page-3">
-    <mxGraphModel dx="334717" dy="203466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="350017" dy="210066" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -159,6 +159,12 @@
         </mxCell>
         <mxCell id="qfkJ88Gh1XFUROKGxnIy-42" parent="JuORC0RYNLJaelu5o0hM-1" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.user;" value="" vertex="1">
           <mxGeometry height="60" width="60" x="120" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qfkJ88Gh1XFUROKGxnIy-45" parent="JuORC0RYNLJaelu5o0hM-1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.endpoint;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="336" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="qfkJ88Gh1XFUROKGxnIy-46" parent="JuORC0RYNLJaelu5o0hM-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="API Gateway" vertex="1">
+          <mxGeometry height="30" width="60" x="345" y="408" as="geometry" />
         </mxCell>
         <mxCell id="JuORC0RYNLJaelu5o0hM-17" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;startSize=40;fontStyle=1;" value="On-Premises Environment" vertex="1">
           <mxGeometry height="240" width="320" x="1040" y="40" as="geometry" />
