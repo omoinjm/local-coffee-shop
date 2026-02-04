@@ -33,10 +33,19 @@ graph TD
             COGNITO[Amazon Cognito<br/>(User Authentication)]
         end
 
+        subgraph Networking & Monitoring
+            CF[Amazon CloudFront<br/>(CDN)]
+            R53[Amazon Route 53<br/>(Domain Service)]
+            CW[Amazon CloudWatch<br/>(Monitoring)]
+        end
+
         Client[Users/Clients]
 
         %% Data Flow for Website/Applications
-        Client -- Access Static Website --> S3
+        Client -- Resolves Domain --> R53
+        R53 -- Points to --> CF
+        Client -- Accesses via CDN --> CF
+        CF -- Fetches Content From --> S3
         Client -- Authenticates --> COGNITO
         COGNITO -- Provides Auth --> IAM
         IAM -- Controls Access to --> EC2
@@ -48,6 +57,16 @@ graph TD
         EC2 -- Accesses Relational Data --> RDS
         LAMBDA -- Accesses NoSQL Data --> DYNAMODB
         LAMBDA -- Stores/Retrieves Content --> S3
+
+        %% Monitoring
+        EC2 -- Emits Metrics --> CW
+        LAMBDA -- Emits Metrics --> CW
+        S3 -- Emits Metrics --> CW
+        RDS -- Emits Metrics --> CW
+        DYNAMODB -- Emits Metrics --> CW
+        CF -- Emits Metrics --> CW
+        R53 -- Emits Metrics --> CW
+
 
         %% Migration Flows
         OP_DB -- Replicate Data --> DMS
