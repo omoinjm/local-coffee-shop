@@ -121,6 +121,7 @@ Monitoring]
 To embed a Draw.io diagram (`.drawio` file) in a Markdown document, you typically need to export it to an image format (like SVG, PNG, or JPG) first. Then, you can embed that image using standard Markdown image syntax.
 
 **Steps to Embed a Draw.io Diagram:**
+
 1. Open your `aws-architecture.drawio` file in Draw.io.
 2. Go to `File > Export as > SVG...` (or PNG/JPG).
 3. Save the exported image (e.g., `aws-architecture.drawio.svg`) in your project directory (or an `images` subdirectory).
@@ -128,6 +129,7 @@ To embed a Draw.io diagram (`.drawio` file) in a Markdown document, you typicall
 
 **Example (after exporting `aws-architecture.drawio` to `aws-architecture.drawio.svg`):**
 
-![AWS Architecture Diagram](aws-architecture.drawio.svg)
+![AWS Architecture Diagram](./assets/aws-architecture.drawio.svg)
 
-*(Note: The image above will only display correctly after you have manually exported `aws-architecture.drawio` to `aws-architecture.drawio.svg` and placed it in the same directory as this Markdown file, or adjusted the path accordingly.)*
+_(Note: The image above will only display correctly after you have manually exported `aws-architecture.drawio` to `aws-architecture.drawio.svg` and placed it in the same directory as this Markdown file, or adjusted the path accordingly.)_
+
