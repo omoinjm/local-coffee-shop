@@ -895,17 +895,24 @@ main {
 	}
 
 	.header {
-		padding: 1.5rem 2rem;
+		padding: 1.5rem 3rem;
 	}
 
 	section {
-		padding: 2rem;
+		padding: 3rem 5%;
+	}
+
+	.heading {
+		font-size: 3.5rem;
+	}
+
+	.home .content h1 {
+		font-size: 5.5rem;
 	}
 }
 
-
 @media screen and (max-width: 768px) {
-	
+
 	.header .icons #menu-btn {
 		display: inline-block;
 	}
@@ -914,9 +921,13 @@ main {
 		position: absolute;
 		top: 100%;
 		right: -100%;
-		background: #fff;
+		background: rgba(26, 26, 26, 0.98);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
 		width: 30rem;
-		height: calc(100vh - 9.5rem)
+		height: calc(100vh - 9.5rem);
+		box-shadow: var(--shadow-lg);
+		border-left: 0.1rem solid rgba(196, 151, 92, 0.2);
 	}
 
 	.header .navbar.active {
@@ -924,36 +935,102 @@ main {
 	}
 
 	.header .navbar a {
-		color: var(--black);
+		color: var(--text-color);
 		display: block;
-		margin: 1.5rem;
-		padding: 0.5rem;
+		margin: 2rem 2rem;
+		padding: 1rem;
 		font-size: 2rem;
+		border-radius: 1rem;
+		background: rgba(196, 151, 92, 0.05);
+		border: 0.1rem solid rgba(196, 151, 92, 0.1);
+	}
+
+	.header .navbar a::after {
+		display: none;
+	}
+
+	.header .navbar a:hover {
+		background: rgba(196, 151, 92, 0.15);
+		transform: translateX(1rem);
 	}
 
 	.header .search-form {
 		width: 90%;
-		right: 2rem;
+		right: 5%;
 	}
 
 	.home {
-		background-position: left;
+		background-position: center;
 		justify-content: center;
 		text-align: center;
 	}
 
+	.home .content {
+		padding: 0 2rem;
+	}
+
 	.home .content h1 {
-		font-size: 4.5rem;
+		font-size: 5rem;
 	}
 
 	.home .content p {
 		font-size: 1.8rem;
 	}
-}
 
+	.heading {
+		font-size: 3rem;
+	}
+
+	.about .row .content,
+	.contact .row form {
+		padding: 3rem 2rem;
+	}
+
+	.contact .row .map {
+		border-radius: 2rem 2rem 0 0;
+	}
+}
 
 @media screen and (max-width: 450px) {
 	html {
-		font-size: 52%;
+		font-size: 50%;
+	}
+
+	.header {
+		padding: 1.5rem 2rem;
+	}
+
+	.header .logo img {
+		height: 5rem;
+	}
+
+	.home .content h1 {
+		font-size: 4rem;
+	}
+
+	.home .content p {
+		font-size: 1.6rem;
+	}
+
+	.heading {
+		font-size: 2.5rem;
+	}
+
+	.btn {
+		padding: 1rem 3rem;
+		font-size: 1.4rem;
+	}
+
+	.menu .box-container,
+	.products .box-container,
+	.reviews .box-container {
+		grid-template-columns: 1fr;
+	}
+
+	.footer .socials a {
+		height: 4.5rem;
+		width: 4.5rem;
+		line-height: 4.5rem;
+		font-size: 1.8rem;
 	}
 }
